@@ -22,6 +22,11 @@ AffinityMaster is a simple Python script that manages CPU affinity for a specifi
     ```sh
     pip install -r requirements.txt
 
+## Building executable
+1. **Run Pyinstaller build command:**
+   ```sh
+   pyinstaller AffinityMaster.py --onefile
+
 ## Usage
 1. Copy **AffinityMaster.ini**, **AffinityMaster.py** or **AffinityMaster.exe** in your game directory.
 2. Configure **AffinityMaster.ini** file with the desired settings. The file should have the following format: 
