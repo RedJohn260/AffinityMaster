@@ -123,17 +123,21 @@ def main():
             logging.error(message1)
             return
     track_progress_sleep(wait_duration)
-    if mode is 0:
+    if mode is 1:
         message2 = f"Setting up {main_exe_name} in mode {mode}: -- priority only mode"
         print(message2)
-        logging.error(message2)
+        logging.info(message2)
         set_cpu_priority(main_exe_name)
-    else:
+    elif mode is 2:
         message3 = f"Setting up {main_exe_name} in mode {mode}: -- affinity & priority mode"
         print(message3)
-        logging.error(message3)
+        logging.info(message3)
         set_cpu_priority(main_exe_name)
         set_cpu_affinity(main_exe_name)
+    elif mode is 0:
+        message3 = f"Setting up {main_exe_name} in mode {mode}: -- affinity & priority mode disabled"
+        print(message3)
+        logging.info(message3)
     print_separator()
 
 if __name__ == "__main__":
