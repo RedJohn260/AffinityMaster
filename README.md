@@ -21,6 +21,9 @@ AffinityMaster is a simple Python script that manages CPU affinity for a specifi
 4. **Install dependencies using pip:**
     ```sh
     pip install -r requirements.txt
+5. **Install using provided batch script:**
+   ```sh
+    run build_app.bat file
 
 ## Building executable
 1. **Run Pyinstaller build command:**
@@ -32,9 +35,11 @@ AffinityMaster is a simple Python script that manages CPU affinity for a specifi
 2. Configure **AffinityMaster.ini** file with the desired settings. The file should have the following format: 
    ```sh
    [config]
-   wait_duration = <wait duration in seconds>
-   exe_name = <name of the executable to manage CPU affinity for>
-   start_app = <0/1 to specify whether to start the executable with the AffinityMaster script>
+   wait_duration = <wait duration in seconds before executing main executable>
+   main_exe_name = <name of the main executable to manage CPU affinity and priority>
+   launcher_exe_name = <name of the launcher executable to launch main executable>
+   start_app = <0/1 to specify whether to start the executable with the PlayGTAIV script>
+   mode = <0/1 to specify whether to set just process priority or affinity and priority>
    ```
 3. Run the script using **Python** or **AffinityMaster.exe**:
    ```sh
