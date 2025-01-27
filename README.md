@@ -1,7 +1,7 @@
 # AffinityMaster
 
 ## Description
-AffinityMaster is a simple Python script that manages CPU affinity for a specified process. Usefull for older games that don't support multithreading. Possibly to improve performance in CPU bound games.
+AffinityMaster is a simple Python script that manages CPU affinity and priority for a specified process. Usefull for older games that don't support multithreading. Possibly to improve performance in CPU bound games.
 
 ## Features
 - Set CPU affinity and priority for a specified process to improve performance.
