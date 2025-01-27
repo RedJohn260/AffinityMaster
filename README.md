@@ -9,8 +9,9 @@ AffinityMaster is a simple Python script that manages CPU affinity and priority 
 - Forces the process to only use physical cores and avoid usage of E-Cores.
 - Easy configuration using an INI file.
 
-## Installation
-1. **Ensure you have Python installed on your system.**
+## Building the exe application
+### Option1:
+1. **Ensure you have Python 3.9.20 installed on your system.**
 
 2. **Clone the repository:**
     ```sh
@@ -21,14 +22,13 @@ AffinityMaster is a simple Python script that manages CPU affinity and priority 
 4. **Install dependencies using pip:**
     ```sh
     pip install -r requirements.txt
-5. **Install using provided batch script:**
+5. **Buld the executable with pyinstaller:**
+   ```sh
+    pyinstaller --clean --onefile AffinityMaster.py
+### Option2:
+1. **Build using provided batch script:**
    ```sh
     run build_app.bat file
-
-## Building executable
-1. **Run Pyinstaller build command:**
-   ```sh
-   pyinstaller AffinityMaster.py --onefile
 
 ## Usage
 1. Copy **AffinityMaster.ini**, **AffinityMaster.py** or **AffinityMaster.exe** in your game directory.
